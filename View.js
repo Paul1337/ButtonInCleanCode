@@ -1,23 +1,23 @@
 class View {
 
   constructor() {
-    this.createButton();
 
   }
 
-  createButton() {
-    this.buttonId = 'button';
-    this.paul = new Button(model.buttonX, model.buttonY, 120, 40, 'кнопка', this.buttonId);
-    document.getElementById("container").appendChild(this.paul.button);
-    // this.paul.button.onclick
-      // this.buttonClickedCallback;
+  createButton( x, y ) {
+    var buttonId = 'button';
+    this.btn = new Button(x, y, 120, 40, 'press me!', buttonId);
+    document.body.appendChild(this.btn.button);
+  }
+
+  createTexts() {
+    this.text1 = document.createElement('p');
+    this.text1.setAttribute('class', 'textClass');
+    this.text1.innerHTML = "Clicks amount: 0";
+    document.body.appendChild(this.text1);
+
+
 
   }
 
-}
-
-function mousePressed() {
-  if (model.button.mouseOver()) {
-    controller.buttonDisappear();
-  }
 }

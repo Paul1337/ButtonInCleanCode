@@ -1,17 +1,21 @@
 class Model {
 
   constructor() {
-    this.buttonX = 10;
-    this.buttonY = 10;
+
+    this.button = {
+      x : 10,
+      y : 10
+    }
+
+    this.clicks = 0;
   }
 
   onButtonClick() {
+    this.clicks ++;
+    this.clicksUpdated ( this.clicks );
 
-    console.log(controller.view.paul.button.getAttribute('visibility'));
-    if (controller.view.paul.button.getAttribute('visibility') == 'hidden' || controller.view.paul.button.getAttribute('visibility') == null) {
-      controller.view.paul.button.setAttribute('visibility', 'visible');
-    } else {
-      controller.view.paul.button.setAttribute('visibility', 'hidden');
+    if (this.clicks >= 100) {
+      this.gotHundred();
     }
 
   }

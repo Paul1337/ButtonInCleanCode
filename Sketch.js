@@ -1,6 +1,5 @@
-var model, controller;
 
-function init() {
-  model = new Model();
-  controller = new Controller(model);
+window.onload = function() {
+  var model = new Model();
+  var controller = new Controller(model);
 }

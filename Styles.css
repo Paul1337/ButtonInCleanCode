@@ -10,3 +10,11 @@ input[type=button] {
   font-size: 20px;
   visibility: visible;
 }
+
+
+.textClass {
+
+  font-size: 25px;
+  color: rgb(0, 28, 255);
+
+}

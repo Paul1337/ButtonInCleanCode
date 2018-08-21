@@ -9,7 +9,5 @@ class Button {
     this.button.setAttribute("width", w + 'px');
     this.button.setAttribute("height", h + 'px');
     this.button.setAttribute("value", text);
-
-    // this.onClick = this.button.onclick;
   }
 }
