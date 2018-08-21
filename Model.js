@@ -8,6 +8,7 @@ class Model {
     }
 
     this.clicks = 0;
+    
   }
 
   onButtonClick() {
